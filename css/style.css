@@ -83,7 +83,7 @@
 }
 .grass {
    width: 700px;
-   height: 00px;
+   height: 400px;
 }
 
 .customer-needs {
@@ -217,7 +217,7 @@
     font-size: 11px;
     color: #999;
 }
-
+.popular-header
 .orange-btn {
     background: #FF6600;
     color: white;
@@ -226,6 +226,16 @@
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
+}
+
+.orange-btn {
+     background: #FF6600;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer; 
 }
 
 
@@ -749,6 +759,172 @@
 .contacts a {
   color: inherit;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .grass {
+      max-width: 370px;
+      text-align: center;
+    }
+
+    .top-bar-content, 
+    .auth-box, 
+    .top-nav {
+        display: none;
+    }
+
+    .header-grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .logo img {
+        max-width: 180px;
+    }
+
+    .info-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .nav-content {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .menu-items {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 5px;
+    }
+
+    .catalog-btn {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 12px;
+        border-radius: 4px;
+    }
+
+    .hero-wrapper {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 22px;
+        line-height: 1.3;
+    }
+
+    .hero-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .hero-image {
+        margin-top: 25px;
+    }
+
+    .grid-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .sub-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+        min-height: 80px;
+        text-align: center;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .main-card {
+        padding: 30px 15px;
+    }
+
+    .benefits-grid, 
+    .product-grid, 
+    .services-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .benefit-item {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .needs-container {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .expert-image img {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-column ul {
+        padding: 0;
+    }
+
+    .contacts p {
+        justify-content: center;
+    }
+
+    .payment-methods {
+        justify-content: center;
+    }
+
+    .orange-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 18px;
+    }
+
+    .section-title, 
+    h2 {
+        font-size: 20px;
+    }
 }
 
 
